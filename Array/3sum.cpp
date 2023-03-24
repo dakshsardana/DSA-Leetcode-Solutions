@@ -12,7 +12,7 @@ public:
                 if(nums[c]+nums[d]==b){
                     ret.push_back({nums[i],nums[c],nums[d]});
                     while(c<d && nums[c]==nums[c+1]) c++;
-                    while(c<d && nums[d]==nums[d+1]) d++;
+                    while(c<d && nums[d]==nums[d-1]) d--;
                     c++;
                     d--;
                 }
